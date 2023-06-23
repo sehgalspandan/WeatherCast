@@ -64,7 +64,7 @@ const SearchComponent = () => {
   }, []);
 
   return (
-    <div className="w-fit mx-auto mt-6">
+    <div className="w-fit space-y-4 mx-auto mt-6">
       <input
         type="text"
         placeholder="Search a location..."
@@ -75,7 +75,7 @@ const SearchComponent = () => {
       <button
         onClick={handleSearch}
         disabled={loading}
-        className="px-10 py-2 bg-green-500 shadow-md text-white rounded-full ml-2"
+        className="px-10 py-2  bg-green-500 shadow-md text-white rounded-full ml-2"
       >
         {loading ? 'Searching...' : 'Search'}
       </button>
